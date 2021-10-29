@@ -2,7 +2,6 @@ function post() {
 
     const token = ""
   
-  
     // Covid 19
     const covid19 = UrlFetchApp.fetch("https://api.covid19api.com/dayone/country/vietnam");
     const data = JSON.parse(covid19);
@@ -81,6 +80,5 @@ function post() {
       "payload": JSON.stringify(listBot[i])
       });
     }
-  
   } 
   
